@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- <configuration debug="true">
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%date - %level - [%thread] - %logger - [%file:%line] - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="FLUENT_TEXT" class="ch.qos.logback.more.appenders.DataFluentAppender">
+        <tag>logxml</tag>
+        <label>normal</label>
+        <remoteHost>localhost</remoteHost>
+        <port>24224</port>
+        <maxQueueSize>20</maxQueueSize>
+    </appender>
+
+    <logger name="fluentd" level="INFO"/>
+
+
+    <root level="INFO">
+        <appender-ref ref="STDOUT" />
+        <appender-ref ref="FLUENT_TEXT" />
+    </root>
+
+</configuration> -->
+
+
+
+
+
+<!-- <configuration>
+    <include resource="org/springframework/boot/logging/logback/base.xml"/>
+    <property name="FLUENTD_HOST" value="127.0.0.1"/>
+    <property name="FLUENTD_PORT" value="24224"/>
+    <appender name="FLUENT" class="ch.qos.logback.more.appenders.DataFluentAppender">
+        <tag>dab</tag>
+        <label>normal</label>
+        <remoteHost>${FLUENTD_HOST}</remoteHost>
+        <port>${FLUENTD_PORT}</port>
+        <maxQueueSize>20</maxQueueSize>
+    </appender>
+
+    <logger name="fluentd" level="debug" additivity="false">
+        <appender-ref ref="CONSOLE" />
+        <appender-ref ref="FILE" />
+        <appender-ref ref="FLUENT" />
+    </logger>
+</configuration> 
+
+<?xml version="1.0" encoding="UTF-8"?> -->
